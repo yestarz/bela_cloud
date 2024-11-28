@@ -1,4 +1,4 @@
-package com.belacloud.api;
+package com.belacloud.api.demo.service;
 
 public interface DemoService {
 

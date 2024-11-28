@@ -1,6 +1,6 @@
 package com.belacloud.system.controller;
 
-import com.belacloud.api.DemoService;
+import com.belacloud.api.demo.service.DemoService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
