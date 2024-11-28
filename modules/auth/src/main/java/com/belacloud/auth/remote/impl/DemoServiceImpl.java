@@ -9,6 +9,8 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @RefreshScope
 public class DemoServiceImpl implements DemoService {
 
+    private String name;
+
     @Value("${app.client-id}")
     private String clientId;
 
