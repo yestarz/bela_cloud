@@ -11,6 +11,8 @@ public class DemoServiceImpl implements DemoService {
 
     private String name;
 
+    private Integer age;
+
     @Value("${app.client-id}")
     private String clientId;
 
