@@ -11,3 +11,4 @@ spring:
       - nacos:datasource.yml?refreshEnabled=true
       - nacos:auth-service.yml?refreshEnabled=true
       - nacos:dubbo.yml?refreshEnabled=true
+      - nacos:redis.yml?refreshEnabled=true
