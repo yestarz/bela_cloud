@@ -10,17 +10,4 @@ spring:
       - nacos:mybatis.yml?refreshEnabled=true
       - nacos:datasource.yml?refreshEnabled=true
       - nacos:system-service.yml?refreshEnabled=true
-
-dubbo:
-  registry:
-    address: nacos://${nacos.address:127.0.0.1}:8848
-    register-mode: instance
-  protocol:
-    name: tri
-    port: 5${server.port}
-  application:
-    qos-enable: true
-    name: ${spring.application.name}
-    qos-port: 2${server.port}
-    qos-accept-foreign-ip: false
-    logger: slf4j
+      - nacos:dubbo.yml?refreshEnabled=true
