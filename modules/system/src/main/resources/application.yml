@@ -12,3 +12,4 @@ spring:
       - nacos:system-service.yml?refreshEnabled=true
       - nacos:dubbo.yml?refreshEnabled=true
       - nacos:redis.yml?refreshEnabled=true
+      - nacos:sa-token.yml?refreshEnabled=true

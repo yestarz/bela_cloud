@@ -1,5 +1,6 @@
 package com.belacloud.system.controller;
 
+import cn.dev33.satoken.stp.StpUtil;
 import com.belacloud.api.demo.service.DemoService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.dubbo.config.annotation.DubboReference;
@@ -24,6 +25,7 @@ public class TestController {
             String headerName = headerNames.nextElement();
             System.out.println(headerName + ":" + request.getHeader(headerName));
         }
-        return demoService.sayHello(name);
+        long loginIdAsLong = StpUtil.getLoginIdAsLong();
+        return demoService.sayHello(name) + ",loginUserId:" + loginIdAsLong;
     }
 }

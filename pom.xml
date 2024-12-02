@@ -37,6 +37,7 @@
         <module>modules</module>
         <module>api</module>
         <module>gateway</module>
+        <module>common</module>
 
     </modules>
 
